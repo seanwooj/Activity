@@ -1,6 +1,5 @@
 require 'git'
 
-loop do
   f = File.write('time.txt', Time.now)
 
   g = Git.init
@@ -8,4 +7,3 @@ loop do
   puts g.commit("Updated on #{Time.now}")
   puts g.push(g.remote('git@github.com:seanwooj/Activity.git'))
 
-end
