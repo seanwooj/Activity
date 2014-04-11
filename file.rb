@@ -6,7 +6,7 @@ loop do
   g = Git.init
   puts g.add(:all=>true)
   puts g.commit("Updated on #{Time.now}")
-  # puts g.push(g.remote(''))
+  puts g.push(g.remote('https://github.com/seanwooj/Activity.git'))
 
   # wait_time = rand((60 * 60 * 1)..(60 * 60 * 10))
   # puts "Seconds: #{wait_time}\nNext run: #{Time.now+wait_time}"
