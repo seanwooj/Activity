@@ -1,4 +1,4 @@
 #! /bin/bash
-. $HOME/.bash_profile
-ruby $HOME/projects/Activity/file.rb
+. /home/ubuntu/.bash_profile
+ruby /home/ubuntu/projects/Activity/file.rb
 
